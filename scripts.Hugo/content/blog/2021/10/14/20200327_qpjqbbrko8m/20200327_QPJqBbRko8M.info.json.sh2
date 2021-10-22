@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200327_QPJqBbRko8M.info.json.vo.* \
+    20200327_QPJqBbRko8M.info.json.ao.* \
+    20200327_QPJqBbRko8M.info.json.bo.* \
+    20200327_QPJqBbRko8M.info.json.wav 
+
+rm -fr               20200327_QPJqBbRko8M.info_dir
+mkdir -p             20200327_QPJqBbRko8M.info_dir
+mv 20200327_QPJqBbRko8M.info.json 20200327_QPJqBbRko8M.info.json.*         20200327_QPJqBbRko8M.info_dir/
+
+
+
+mv  20200327_QPJqBbRko8M.info_dir/20200327_QPJqBbRko8M.info.json.jpg 20200327_QPJqBbRko8M.info_dir/20200327_QPJqBbRko8M.info.json.webm.mp4.jpg
+
+cat > 20200327_QPJqBbRko8M.info_dir/_index.md << EOF3
++++
+title = " 20200327_QPJqBbRko8M 112：10多万生命确诊，十万生命等宣战，战争已经打进美国本土，美国宣不宣战?神学：一二三次世界大战对比现象。（追补95期节目内容） "
+description = " #三次世界大战#生化危机#神学预测_本期节目为95期节目内容的延续，战争打入美国内部，这是一战和二战都没有发生的，而这次，看川普总统如何决策，是宣战成为留芳千古，还是退让成为遗臭万年的美国罪人呢?国会已经出了多个法案，如一战二战一样，各种法案都布局好了。打还是不打?10多万人的生命不值得宣战和参战?_------------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！ "
+weight = 20
++++
+
+{{< mymp4 mp4="20200327_QPJqBbRko8M.info.json.webm.mp4" 
+text="len $(cat 20200327_QPJqBbRko8M.info_dir/20200327_QPJqBbRko8M.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200327_QPJqBbRko8M.info.json.25k.mp4"
+text="len $(cat 20200327_QPJqBbRko8M.info_dir/20200327_QPJqBbRko8M.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200327_QPJqBbRko8M.info.json.48k.mp4"
+text="len $(cat 20200327_QPJqBbRko8M.info_dir/20200327_QPJqBbRko8M.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#三次世界大战#生化危机#神学预测_本期节目为95期节目内容的延续，战争打入美国内部，这是一战和二战都没有发生的，而这次，看川普总统如何决策，是宣战成为留芳千古，还是退让成为遗臭万年的美国罪人呢?国会已经出了多个法案，如一战二战一样，各种法案都布局好了。打还是不打?10多万人的生命不值得宣战和参战?_------------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=QPJqBbRko8M" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

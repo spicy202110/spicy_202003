@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200418_OjzUFXfrmvU.info.json.vo.* \
+    20200418_OjzUFXfrmvU.info.json.ao.* \
+    20200418_OjzUFXfrmvU.info.json.bo.* \
+    20200418_OjzUFXfrmvU.info.json.wav 
+
+rm -fr               20200418_OjzUFXfrmvU.info_dir
+mkdir -p             20200418_OjzUFXfrmvU.info_dir
+mv 20200418_OjzUFXfrmvU.info.json 20200418_OjzUFXfrmvU.info.json.*         20200418_OjzUFXfrmvU.info_dir/
+
+
+
+mv  20200418_OjzUFXfrmvU.info_dir/20200418_OjzUFXfrmvU.info.json.jpg 20200418_OjzUFXfrmvU.info_dir/20200418_OjzUFXfrmvU.info.json.mp4.jpg
+
+cat > 20200418_OjzUFXfrmvU.info_dir/_index.md << EOF3
++++
+title = " 20200418_OjzUFXfrmvU 17：（有字幕）佩洛西议长在未来的一年时间内，将会以各种方式弹劾川普，而川普对于香港人民来说，是有罪的。建议朋友们看完本片（老片新剪，剪掉粗话，把17期节目重新补上） "
+description = " #川普#拜登#佩洛西_节目内容主要讨论川普在2019年并没有做出什么大的成绩，对于香港和台湾也没有表现出一个世界领袖的勇敢和智慧。我相信在2020年到来后，川普将面对佩洛西代表的民主党发起的各种弹劾，直到打垮他为止，不过，我还是认为川普会连任成功。_#osephRobinette#ElizabethAnnWarren#Trump#Bernard#杨安泽#_-------------------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！ "
+weight = 20
++++
+
+{{< mymp4 mp4="20200418_OjzUFXfrmvU.info.json.mp4" 
+text="len $(cat 20200418_OjzUFXfrmvU.info_dir/20200418_OjzUFXfrmvU.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200418_OjzUFXfrmvU.info.json.25k.mp4"
+text="len $(cat 20200418_OjzUFXfrmvU.info_dir/20200418_OjzUFXfrmvU.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200418_OjzUFXfrmvU.info.json.48k.mp4"
+text="len $(cat 20200418_OjzUFXfrmvU.info_dir/20200418_OjzUFXfrmvU.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#川普#拜登#佩洛西_节目内容主要讨论川普在2019年并没有做出什么大的成绩，对于香港和台湾也没有表现出一个世界领袖的勇敢和智慧。我相信在2020年到来后，川普将面对佩洛西代表的民主党发起的各种弹劾，直到打垮他为止，不过，我还是认为川普会连任成功。_#osephRobinette#ElizabethAnnWarren#Trump#Bernard#杨安泽#_-------------------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=OjzUFXfrmvU" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

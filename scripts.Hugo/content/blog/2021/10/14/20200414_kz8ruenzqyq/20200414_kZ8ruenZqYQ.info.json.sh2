@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200414_kZ8ruenZqYQ.info.json.vo.* \
+    20200414_kZ8ruenZqYQ.info.json.ao.* \
+    20200414_kZ8ruenZqYQ.info.json.bo.* \
+    20200414_kZ8ruenZqYQ.info.json.wav 
+
+rm -fr               20200414_kZ8ruenZqYQ.info_dir
+mkdir -p             20200414_kZ8ruenZqYQ.info_dir
+mv 20200414_kZ8ruenZqYQ.info.json 20200414_kZ8ruenZqYQ.info.json.*         20200414_kZ8ruenZqYQ.info_dir/
+
+
+
+mv  20200414_kZ8ruenZqYQ.info_dir/20200414_kZ8ruenZqYQ.info.json.jpg 20200414_kZ8ruenZqYQ.info_dir/20200414_kZ8ruenZqYQ.info.json.webm.mp4.jpg
+
+cat > 20200414_kZ8ruenZqYQ.info_dir/_index.md << EOF3
++++
+title = " 20200414_kZ8ruenZqYQ 133附1：133期节目出现观看错误，我重新调试了转换比例，但也不知道能不能播放。 "
+description = " #中国人#华人#唐人_喜欢用“中国人”自居其类的华人，是自取其R，这三字老早就不是什么好名词了。还不如用唐人、华人这种含糊名。_本期应我年少时的责任主编老师要求而做，我还是用心做了，关于“中国人”的污名由来已久，别自己往自己脸上挂。别人往你脸上挂，你需要大声喝令其自挂，别挂错人了，得按照他们宣传的几千年的传统方式来执行。_本节目用于测试，正片133期很多人说看不了，总是出错。我一直在排查这个问题。目前还没有解决，只能先找软件剪揖的问题和录制格式的问题。_------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！ "
+weight = 20
++++
+
+{{< mymp4 mp4="20200414_kZ8ruenZqYQ.info.json.webm.mp4" 
+text="len $(cat 20200414_kZ8ruenZqYQ.info_dir/20200414_kZ8ruenZqYQ.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200414_kZ8ruenZqYQ.info.json.25k.mp4"
+text="len $(cat 20200414_kZ8ruenZqYQ.info_dir/20200414_kZ8ruenZqYQ.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200414_kZ8ruenZqYQ.info.json.48k.mp4"
+text="len $(cat 20200414_kZ8ruenZqYQ.info_dir/20200414_kZ8ruenZqYQ.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#中国人#华人#唐人_喜欢用“中国人”自居其类的华人，是自取其R，这三字老早就不是什么好名词了。还不如用唐人、华人这种含糊名。_本期应我年少时的责任主编老师要求而做，我还是用心做了，关于“中国人”的污名由来已久，别自己往自己脸上挂。别人往你脸上挂，你需要大声喝令其自挂，别挂错人了，得按照他们宣传的几千年的传统方式来执行。_本节目用于测试，正片133期很多人说看不了，总是出错。我一直在排查这个问题。目前还没有解决，只能先找软件剪揖的问题和录制格式的问题。_------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=kZ8ruenZqYQ" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

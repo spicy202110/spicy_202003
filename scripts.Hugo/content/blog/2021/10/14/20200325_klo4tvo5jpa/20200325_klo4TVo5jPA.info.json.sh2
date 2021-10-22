@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200325_klo4TVo5jPA.info.json.vo.* \
+    20200325_klo4TVo5jPA.info.json.ao.* \
+    20200325_klo4TVo5jPA.info.json.bo.* \
+    20200325_klo4TVo5jPA.info.json.wav 
+
+rm -fr               20200325_klo4TVo5jPA.info_dir
+mkdir -p             20200325_klo4TVo5jPA.info_dir
+mv 20200325_klo4TVo5jPA.info.json 20200325_klo4TVo5jPA.info.json.*         20200325_klo4TVo5jPA.info_dir/
+
+
+
+mv  20200325_klo4TVo5jPA.info_dir/20200325_klo4TVo5jPA.info.json.jpg 20200325_klo4TVo5jPA.info_dir/20200325_klo4TVo5jPA.info.json.webm.mp4.jpg
+
+cat > 20200325_klo4TVo5jPA.info_dir/_index.md << EOF3
++++
+title = " 20200325_klo4TVo5jPA 110：习近平、王岐山是中国人还是中共?中共是个什么玩意儿?美国这么多年最失败的，就是老被骗成把中国人和中共分开，直到今天，也没能幸免。悲！ "
+description = " #习近平#中共#中国人_川普是德国人还是美国人?川普能与共和党分得开?分开了的川普还会是美国总统的那个川普?_本期再度扯中国人与中共的逻辑，这在现象学里简直就是不值一提的东西，但是，数学会算的人，是轻轻松松就能算出来的。_------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！ "
+weight = 20
++++
+
+{{< mymp4 mp4="20200325_klo4TVo5jPA.info.json.webm.mp4" 
+text="len $(cat 20200325_klo4TVo5jPA.info_dir/20200325_klo4TVo5jPA.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200325_klo4TVo5jPA.info.json.25k.mp4"
+text="len $(cat 20200325_klo4TVo5jPA.info_dir/20200325_klo4TVo5jPA.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200325_klo4TVo5jPA.info.json.48k.mp4"
+text="len $(cat 20200325_klo4TVo5jPA.info_dir/20200325_klo4TVo5jPA.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#习近平#中共#中国人_川普是德国人还是美国人?川普能与共和党分得开?分开了的川普还会是美国总统的那个川普?_本期再度扯中国人与中共的逻辑，这在现象学里简直就是不值一提的东西，但是，数学会算的人，是轻轻松松就能算出来的。_------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=klo4TVo5jPA" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
