@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200417_9gsIvIdd5bU.info.json.vo.* \
+    20200417_9gsIvIdd5bU.info.json.ao.* \
+    20200417_9gsIvIdd5bU.info.json.bo.* \
+    20200417_9gsIvIdd5bU.info.json.wav 
+
+rm -fr               20200417_9gsIvIdd5bU.info_dir
+mkdir -p             20200417_9gsIvIdd5bU.info_dir
+mv 20200417_9gsIvIdd5bU.info.json 20200417_9gsIvIdd5bU.info.json.*         20200417_9gsIvIdd5bU.info_dir/
+
+
+
+mv  20200417_9gsIvIdd5bU.info_dir/20200417_9gsIvIdd5bU.info.json.jpg 20200417_9gsIvIdd5bU.info_dir/20200417_9gsIvIdd5bU.info.json.webm.mp4.jpg
+
+cat > 20200417_9gsIvIdd5bU.info_dir/_index.md << EOF3
++++
+title = " 20200417_9gsIvIdd5bU 137：（有字幕）白左是关门打狗棒的举棒人，白左不是移民的开门人，他没吃的时候非常可怕，这个世界还得靠极右翼才能造就。极右建国，白左败国。 "
+description = " #白左#白右#殖民与移民_本期主要搞清楚白左是哪一类群体，极右翼又是一个什么样的群体。当财富没有时又怪罪于白左。殖民与移民，向来都是极右群体的专业，但永远被白左抢功。简单说，极右翼是创业者，类比一个家庭中的主要创收人。而白左或极左翼就是这个家里只管花钱的那一位。_---------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！ "
+weight = 20
++++
+
+{{< mymp4 mp4="20200417_9gsIvIdd5bU.info.json.webm.mp4" 
+text="len $(cat 20200417_9gsIvIdd5bU.info_dir/20200417_9gsIvIdd5bU.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200417_9gsIvIdd5bU.info.json.25k.mp4"
+text="len $(cat 20200417_9gsIvIdd5bU.info_dir/20200417_9gsIvIdd5bU.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200417_9gsIvIdd5bU.info.json.48k.mp4"
+text="len $(cat 20200417_9gsIvIdd5bU.info_dir/20200417_9gsIvIdd5bU.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#白左#白右#殖民与移民_本期主要搞清楚白左是哪一类群体，极右翼又是一个什么样的群体。当财富没有时又怪罪于白左。殖民与移民，向来都是极右群体的专业，但永远被白左抢功。简单说，极右翼是创业者，类比一个家庭中的主要创收人。而白左或极左翼就是这个家里只管花钱的那一位。_---------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=9gsIvIdd5bU" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

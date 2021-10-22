@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200420_WU4ED-FjTVk.info.json.vo.* \
+    20200420_WU4ED-FjTVk.info.json.ao.* \
+    20200420_WU4ED-FjTVk.info.json.bo.* \
+    20200420_WU4ED-FjTVk.info.json.wav 
+
+rm -fr               20200420_WU4ED-FjTVk.info_dir
+mkdir -p             20200420_WU4ED-FjTVk.info_dir
+mv 20200420_WU4ED-FjTVk.info.json 20200420_WU4ED-FjTVk.info.json.*         20200420_WU4ED-FjTVk.info_dir/
+
+
+
+mv  20200420_WU4ED-FjTVk.info_dir/20200420_WU4ED-FjTVk.info.json.jpg 20200420_WU4ED-FjTVk.info_dir/20200420_WU4ED-FjTVk.info.json.mp4.jpg
+
+cat > 20200420_WU4ED-FjTVk.info_dir/_index.md << EOF3
++++
+title = " 20200420_WU4ED-FjTVk 12：（有字幕）全世界所有国家听好了，你们全给我跪下。（老片重剪，原私享影片，剪掉粗话再上传） "
+description = " #中美国贸易战#川普#贸易协议_本片为去年脸书影片，也是得罪脸书订阅朋友三片中最讨人恨的一期。今年年初发在油管，但粗话太多，本期剪掉粗话后重发出来。_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。__我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。__感谢各路朋友订阅我，非常感谢！ "
+weight = 20
++++
+
+{{< mymp4 mp4="20200420_WU4ED-FjTVk.info.json.mp4" 
+text="len $(cat 20200420_WU4ED-FjTVk.info_dir/20200420_WU4ED-FjTVk.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200420_WU4ED-FjTVk.info.json.25k.mp4"
+text="len $(cat 20200420_WU4ED-FjTVk.info_dir/20200420_WU4ED-FjTVk.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200420_WU4ED-FjTVk.info.json.48k.mp4"
+text="len $(cat 20200420_WU4ED-FjTVk.info_dir/20200420_WU4ED-FjTVk.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#中美国贸易战#川普#贸易协议_本片为去年脸书影片，也是得罪脸书订阅朋友三片中最讨人恨的一期。今年年初发在油管，但粗话太多，本期剪掉粗话后重发出来。_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。__我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。__感谢各路朋友订阅我，非常感谢！" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=WU4ED-FjTVk" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

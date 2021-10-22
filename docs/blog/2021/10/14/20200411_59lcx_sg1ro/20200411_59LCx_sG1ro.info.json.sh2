@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200411_59LCx_sG1ro.info.json.vo.* \
+    20200411_59LCx_sG1ro.info.json.ao.* \
+    20200411_59LCx_sG1ro.info.json.bo.* \
+    20200411_59LCx_sG1ro.info.json.wav 
+
+rm -fr               20200411_59LCx_sG1ro.info_dir
+mkdir -p             20200411_59LCx_sG1ro.info_dir
+mv 20200411_59LCx_sG1ro.info.json 20200411_59LCx_sG1ro.info.json.*         20200411_59LCx_sG1ro.info_dir/
+
+
+
+mv  20200411_59LCx_sG1ro.info_dir/20200411_59LCx_sG1ro.info.json.jpg 20200411_59LCx_sG1ro.info_dir/20200411_59LCx_sG1ro.info.json.webm.mp4.jpg
+
+cat > 20200411_59LCx_sG1ro.info_dir/_index.md << EOF3
++++
+title = " 20200411_59LCx_sG1ro 131：（有字幕）Election of Bannon as President。选班农当总统，或许才能让美国不倒。我预感美国再不出现极端右翼总统，美国将暗淡无光。 "
+description = " #班农#Stephen Bannon#麻辣空间_The election of Bannon as president may make the United States unstoppable. I foresee that the United States will no longer have extreme right-wing presidents, and the United States will be bleak._本期节目简谈这个世界必须交给“极端右翼”政治人物出场了，如果再拖下去，这个星球将会进入暗色时代。而当今世界各国，特别是美国，再不出现极端右翼出场，美国很难再次伟大，这是我的预感。_----------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！ "
+weight = 20
++++
+
+{{< mymp4 mp4="20200411_59LCx_sG1ro.info.json.webm.mp4" 
+text="len $(cat 20200411_59LCx_sG1ro.info_dir/20200411_59LCx_sG1ro.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200411_59LCx_sG1ro.info.json.25k.mp4"
+text="len $(cat 20200411_59LCx_sG1ro.info_dir/20200411_59LCx_sG1ro.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200411_59LCx_sG1ro.info.json.48k.mp4"
+text="len $(cat 20200411_59LCx_sG1ro.info_dir/20200411_59LCx_sG1ro.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#班农#Stephen Bannon#麻辣空间_The election of Bannon as president may make the United States unstoppable. I foresee that the United States will no longer have extreme right-wing presidents, and the United States will be bleak._本期节目简谈这个世界必须交给“极端右翼”政治人物出场了，如果再拖下去，这个星球将会进入暗色时代。而当今世界各国，特别是美国，再不出现极端右翼出场，美国很难再次伟大，这是我的预感。_----------------------------------_为了墙内朋友的安全，比较正面刚的内容就不要用于评论，请发邮件给我。_我的邮箱是wto5185188@gmail，或者不想公开在评论区的话也发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Diamond John。这两个地方平时只用于看信息，我自己说的少。不过可以相互关注，方便联系。_感谢各路朋友订阅我，非常感谢！" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=59LCx_sG1ro" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
