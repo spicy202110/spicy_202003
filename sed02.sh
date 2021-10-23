@@ -2,7 +2,7 @@
 
 toptop=spicy_202003
 
-[ -d docs ] \
-    && mkdir   docs/${toptop}  \
-    && (mv docs/* docs/${toptop}/ 2>/dev/null ; cp docs/${toptop}/index.html docs/)
+[ -d docs ] && [ ! -d docs/${toptop} ] || exit
+cp -a docs/ ${toptop}/
+mv ${toptop}/ docs/
 

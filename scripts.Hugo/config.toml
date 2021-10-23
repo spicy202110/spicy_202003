@@ -6,6 +6,7 @@
 #baseURL       = "/"
 #baseURL       = "/../spicy_202003/"
 baseURL       = "/spicy_202003/"
+#baseURL       = "/spicy_202003/spicy_202003/"
 
 timeout       = 30000
 
