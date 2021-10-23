@@ -1,0 +1,69 @@
+#!/bin/bash
+
+[ -d scripts.Hugo/ ] || ( echo ; echo "scripts.Hugo/ no found , exit " )
+[ -d scripts.Hugo/ ] || exit
+
+git_push(){
+    echo aaa0001
+    git commit -a -m "`date`"
+    echo aaa0002
+    git push && sync \
+        || ( sleep 3 ; git push && sync ) \
+        || ( sleep 3 ; git push && sync )
+    echo aaa0009
+}
+
+echo aaa0101
+for aa1 in \
+    `find docs/ -size +10M -a -type f` \
+    `find scripts.Hugo/ -size +10M -a -type f`
+do
+    echo aaa0102
+    git add ${aa1}
+    echo aaa0103
+    git_push ${aa1}
+    echo aaa0104
+done
+echo aaa0109
+
+# limit to 200M
+bb1=1
+echo aaa0201
+for aa1 in \
+    `find docs/ -size -10M -a -size +1048576c -a -type f` \
+    `find scripts.Hugo/ -size -10M -a -size +1048576c -a -type f`
+do
+    echo a020102
+    git add ${aa1}
+    echo aaa0203
+
+    bb1=$(( ${bb1} + 1 ))
+    if [ ${bb1} -gt 20 ]
+    then
+        bb1=1
+        echo aaa0204
+        git_push ${aa1}
+        echo aaa0205
+    fi
+done
+echo aaa0208
+git_push ${aa1}
+echo aaa0209
+
+
+echo aaa0301
+git add scripts.Hugo/
+echo aaa0302
+git_push ${aa1}
+echo aaa0303
+git add docs/
+echo aaa0308
+git_push ${aa1}
+echo aaa0309
+
+echo aaa0401
+git add .
+echo aaa0408
+git_push ${aa1}
+echo aaa0409
+
